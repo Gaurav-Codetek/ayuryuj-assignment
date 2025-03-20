@@ -43,6 +43,8 @@ npx expo start -c
 
 #### If you run into any issues, consider:
 
+- If you want to see logs live on screen then remove ``LogBox.ignoreAllLogs()`` line from ``./app/index.js`` inside `Index()` function.
+
 - Updating Node.js and npm:
 ```sh
 npm install -g npm
