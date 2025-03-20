@@ -9,7 +9,7 @@ import { useNavigation } from "@react-navigation/native";
 const tabIcons = [
   { iconName: "home", label: "Home", nav: "Home" },
   { iconName: "search", label: "Search", nav: "Search" },
-  { iconName: "stethoscope", label: "Consult now", nav: "DoctorsList", isSpecial: true },
+  { iconName: "stethoscope", label: "Consult now", nav: "doctors-list", isSpecial: true },
   { iconName: "shopping-bag", label: "Orders", nav: "MyOrders" },
   { iconName: "user", label: "Profile", nav: "Profile" }
 ];
