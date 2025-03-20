@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "867922280298",
+    "project_id": "ayuryuj-e8b5b",
+    "storage_bucket": "ayuryuj-e8b5b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:867922280298:android:08f2ea9dc0657c84ba6f13",
+        "android_client_info": {
+          "package_name": "com.gaurav.ayuryuj"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjyQ-AXMCGHHQ5YjijW71cpYfc00FM65w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

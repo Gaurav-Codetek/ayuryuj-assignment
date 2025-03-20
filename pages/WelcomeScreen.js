@@ -26,7 +26,6 @@ export default function AuthStatus() {
   const scaleAnim = useState(new Animated.Value(0.8))[0];
 
   useEffect(() => {
-    // Animation setup
     Animated.parallel([
       Animated.timing(fadeAnim, {
         toValue: 1,
@@ -52,7 +51,6 @@ export default function AuthStatus() {
 
   useEffect(() => {
     if (!loading) {
-      // Fade out before navigation
       Animated.timing(fadeAnim, {
         toValue: 0,
         duration: 500,

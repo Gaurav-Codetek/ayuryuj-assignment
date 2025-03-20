@@ -16,7 +16,7 @@
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package":"com.gaurav.ayuryuj"
+      "package": "com.gaurav.ayuryuj"
     },
     "web": {
       "bundler": "metro",
@@ -38,7 +38,7 @@
     "experiments": {
       "typedRoutes": true
     },
-    "extra":{
+    "extra": {
       "firebaseConfig": {
         "apiKey": "AIzaSyB7TE7uGhv8FnruwZ9zZHBNd4ju5OCp4oE",
         "authDomain": "ayuryuj-e8b5b.firebaseapp.com",
@@ -47,6 +47,12 @@
         "messagingSenderId": "867922280298",
         "appId": "1:867922280298:web:c12cd94e001e9294ba6f13",
         "measurementId": "G-6PXDE65163"
+      },
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "a16ec08c-6ac5-4514-b694-897818bf2d03"
       }
     }
   }

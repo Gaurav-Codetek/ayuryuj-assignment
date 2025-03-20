@@ -109,7 +109,10 @@ export default function Registration() {
   const handleSubmit = () => {
     if (formData.name && formData.email && formData.age) {
       setUser(formData);
-      nav.navigate("Home", formData);
+      nav.reset({
+        index: 0,
+        routes: [{ name: "Home" }],
+      })
     }
   };
 

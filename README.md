@@ -1,50 +1,56 @@
-# Welcome to your Expo app 👋
+# Project Setup
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This README provides basic setup instructions for initializing and starting your project.
 
-## Get started
+## Prerequisites
 
-1. Install dependencies
+Before you begin, ensure you have the following installed on your system:
 
-   ```bash
-   npm install
-   ```
+- **Node.js** (Download from [nodejs.org](https://nodejs.org/))
+- **npm** (Comes with Node.js)
+- **Expo CLI** (Can be installed globally using `npm install -g expo-cli`, if needed)
 
-2. Start the app
+## Installation
 
-   ```bash
-    npx expo start
-   ```
+### 1. Install all Dependencies
+```sh
+npm install
+```
+#### This command installs all the required dependencies listed in the package.json file. It ensures that all necessary packages are available for your project.
 
-In the output, you'll find options to open the app in a
+### 2. Check for Dependencies not matching the installed expo version
+```sh
+npx expo install --check
+```
+#### This command checks if all required dependencies for Expo are installed and installs any missing ones. It helps in maintaining compatibility with Expo’s ecosystem.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### 3. Run on Expo Go app
+```sh
+npx expo start
+```
+#### This command starts the Expo development server, allowing you to run the application on a connected device or emulator. You can scan the QR code using the Expo Go app on your mobile device or use an emulator.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Additional Tips
 
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+- If you encounter permission issues, try running npm install with sudo (on macOS/Linux).
+- Use npm audit fix to resolve security vulnerabilities in dependencies.
+- If Expo fails to start, try clearing the cache using:
+```sh
+npx expo start -c
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Troubleshooting
 
-## Learn more
+#### If you run into any issues, consider:
 
-To learn more about developing your project with Expo, look at the following resources:
+- Updating Node.js and npm:
+```sh
+npm install -g npm
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+- Updating Expo CLI:
+```sh
+npm install -g expo-cli
+```
 
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- Checking the Expo documentation: https://docs.expo.dev/

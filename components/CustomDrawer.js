@@ -82,7 +82,7 @@ export default function CustomDrawerContent(props) {
         onPress={async() => {
             await signOut(auth);
             await AsyncStorage.removeItem('userData');
-            navigation.navigate('WelcomeScreen');
+            navigation.reset({index:0, routes:[{name: 'WelcomeScreen'}]});
         }}
       >
         <Ionicons name="log-out-outline" size={20} color="#FF9600" />

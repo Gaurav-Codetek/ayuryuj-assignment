@@ -1,6 +1,6 @@
 import '../gesture-handler';
 import React from "react";
-import { StyleSheet, StatusBar, Platform, TouchableOpacity, View, Text } from 'react-native';
+import { StyleSheet, StatusBar, Platform, TouchableOpacity, View, Text, LogBox } from 'react-native';
 import Tab from "../components/BottomTab";
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { createStackNavigator } from '@react-navigation/stack';
@@ -76,6 +76,7 @@ function AuthNavigator() {
 }
 
 export default function Index() {
+  LogBox.ignoreAllLogs();
   return (
     <UserProvider>
     <NavigationIndependentTree>

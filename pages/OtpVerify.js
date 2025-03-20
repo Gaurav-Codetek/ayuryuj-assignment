@@ -157,7 +157,7 @@ export default function PhoneAuth() {
       const credential = PhoneAuthProvider.credential(verificationId, code);
       await signInWithCredential(auth, credential);
       setIsVerifying(false);
-      navigation.navigate("user-registration"); // Navigate to your home screen
+      navigation.replace("user-registration"); // Navigate to your home screen
     } catch (error) {
       setIsVerifying(false);
       Alert.alert("Verification Failed", "The code you entered is invalid. Please try again.");
