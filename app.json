@@ -15,7 +15,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package":"com.gaurav.ayuryuj"
     },
     "web": {
       "bundler": "metro",
@@ -36,6 +37,17 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra":{
+      "firebaseConfig": {
+        "apiKey": "AIzaSyB7TE7uGhv8FnruwZ9zZHBNd4ju5OCp4oE",
+        "authDomain": "ayuryuj-e8b5b.firebaseapp.com",
+        "projectId": "ayuryuj-e8b5b",
+        "storageBucket": "ayuryuj-e8b5b.firebasestorage.app",
+        "messagingSenderId": "867922280298",
+        "appId": "1:867922280298:web:c12cd94e001e9294ba6f13",
+        "measurementId": "G-6PXDE65163"
+      }
     }
   }
 }
